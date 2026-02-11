@@ -136,7 +136,7 @@ def main():
     - divide: Divide one number by another
     
     When asked to perform calculations, use the appropriate tool rather than calculating the result yourself.
-    Explain the calculation and show the result clearly.
+    Should you decide to use a tool, explain the tool use, calculation and show the result clearly.
     """
 
     # Use the MCP client in a context manager
