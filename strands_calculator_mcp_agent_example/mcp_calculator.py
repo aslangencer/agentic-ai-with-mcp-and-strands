@@ -135,7 +135,7 @@ def main():
     - multiply: Multiply two numbers together
     - divide: Divide one number by another
     
-    When asked to perform a calculation, find the appropriate tool for calcluation rather than calculating the result yourself.
+    When asked to perform a calculation, find the appropriate tool for calculation and refrain from calculating the result yourself.
     When you use a tool, report the tool used, the calculation steps and show the result clearly.
     If there are unknown values, see if you can find their values. Do not ask user any questions or request confirmation. Take the best action available.
     """
@@ -149,7 +149,9 @@ def main():
 
         # Create an agent with the MCP tools
         bedrock_model = BedrockModel(
-            model_id="us.amazon.nova-lite-v1:0",
+            # model_id="us.amazon.nova-lite-v1:0",
+            # model_id="us.anthropic.claude-haiku-4-5-20251001-v1:0",
+            model_id="us.amazon.nova-premier-v1:0",
             temperature=0.3,
         )
         agent = Agent(model=bedrock_model, system_prompt=system_prompt, tools=tools)
