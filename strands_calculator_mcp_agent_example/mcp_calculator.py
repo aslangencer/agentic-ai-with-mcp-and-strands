@@ -135,8 +135,9 @@ def main():
     - multiply: Multiply two numbers together
     - divide: Divide one number by another
     
-    When asked to perform calculations, use the appropriate tool rather than calculating the result yourself.
-    Should you decide to use a tool, explain the tool use, calculation and show the result clearly.
+    When asked to perform a calculation, find the appropriate tool for calcluation rather than calculating the result yourself.
+    When you use a tool, report the tool used, the calculation steps and show the result clearly.
+    If there are unknown values, see if you can find their values. Do not ask user any questions or request confirmation. Take the best action available.
     """
 
     # Use the MCP client in a context manager
