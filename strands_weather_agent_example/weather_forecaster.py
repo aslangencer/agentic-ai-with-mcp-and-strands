@@ -83,7 +83,8 @@ When displaying responses:
 - Highlight important information like temperature, precipitation, and alerts
 - Handle errors appropriately
 - Convert technical terms to user-friendly language
-
+- Report temperatures only in Celcius and never in Fahrenheit. Remove Fahrenheit from the output.
+- Avoid repeat tool use
 Always explain the weather conditions clearly and provide context for the forecast.
 """
 
