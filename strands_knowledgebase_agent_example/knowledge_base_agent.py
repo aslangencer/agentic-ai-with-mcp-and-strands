@@ -85,7 +85,6 @@ Your responses should:
 3. Not include any metadata or technical details
 4. Be conversational but brief
 5. Acknowledge when information is conflicting or missing
-6. Begin the response with \n
 
 When analyzing the knowledge base results:
 - Higher scores (closer to 1.0) indicate more relevant results
@@ -113,6 +112,7 @@ def determine_action(agent, query):
             'model_id': 'us.amazon.nova-pro-v1:0'
         }
     )
+    print(": ", end="")  # Add space after the automatic print
     
     # Clean and extract the action
     action_text = str(result).lower().strip()
